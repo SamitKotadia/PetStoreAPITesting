@@ -1,0 +1,70 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Validate weather data with valid data",
+        "description": "",
+        "id": "api-get-request-testing-for-petstore;validate-weather-data-with-valid-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 90670900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have base uri",
+            "match": {
+              "location": "getPetDataStepDef.i_have_base_uri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2259595000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I execute post request to add pet in store",
+            "match": {
+              "location": "getPetDataStepDef.IExecutePostRequestToAddPetInStore()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40189800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see status code as \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "getPetDataStepDef.i_should_see_status_code_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@getService"
+          }
+        ]
+      }
+    ],
+    "name": "API get request Testing for PetStore",
+    "description": "As a user\nI want to to be able get pet data from store\nSo that I can validate that API functionality",
+    "id": "api-get-request-testing-for-petstore",
+    "keyword": "Feature",
+    "uri": "getPetData.feature"
+  }
+]
